@@ -20,3 +20,9 @@
 
 }
 
+## Baseline metrics (20 Jul 2025)
+
+Dataset sizes: train=25000, test=25000
+Model parameters: 66,955,010
+Baseline accuracy: 0.4455
+
