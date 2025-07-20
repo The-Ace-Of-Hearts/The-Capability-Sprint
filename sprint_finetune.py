@@ -59,7 +59,7 @@ def main():
     trainer = Trainer(
         model=model,
         args=training_args,
-        train_dataset=tokenized['train'].shuffle(seed=42).select(range(6000)),  # small subset for speed
+        train_dataset=tokenized['train'].shuffle(seed=42),
         eval_dataset=tokenized['test'].shuffle(seed=42).select(range(2000)),
         compute_metrics=compute_metrics,
         data_collator=data_collator # Add data collator here
